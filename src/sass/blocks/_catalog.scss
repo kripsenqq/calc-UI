@@ -1,0 +1,171 @@
+.catalog {
+    padding-bottom: 103px;
+    h2{
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+        color: #0d0d0d;
+    }
+    &__tabs{
+        margin-top: 70px;
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+    &__tab{
+        min-width: 220px;
+        height: 50px;
+        border: solid 2px #d0d0d0;
+        transform: skewX(-22deg);
+        margin: 0 5px;
+        line-height: 48px;
+        font-size: 18px;
+        font-weight: 500;
+        text-align: center;
+        color: #6b6b6b;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: 0.5s all;
+        &:hover{
+            box-shadow: 3px 3px 20px black;
+            border: 0;
+        }
+        div{
+            transform: skewX(22deg);
+        }
+        &_active{
+            color: #fff;
+            background-color: #c70101;
+            border: none;
+        }
+    }
+    &__content{
+        margin-top: 40px;
+        display: none;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        &_active{
+            display: flex;
+        }
+    }
+    &-item{
+        margin-top: 20px;
+        width: 250px;
+        height: 410px;
+        padding: 20px 20px 26px 20px;
+        border: 3px solid #e8e8e8;
+        overflow: hidden;
+        &__img{
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: 200px;
+        }
+        &__subtitle{
+            margin-top: 20px;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            color: #0d0d0d;
+        }
+        &__descr{
+            text-align: center;
+            margin-top: 16px;
+            font-size: 14px;
+            font-weight: 300;
+            color: #0d0d0d;
+        }
+        &__link{
+            margin-top: 17px;
+            display: block;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 500;
+            color: #c70101;
+        }
+        hr{
+            margin-top: 19px;
+            margin: 19px 1px 21px 0;
+            background-color: #e8e8e8;
+            border-bottom: none;
+        }
+        &__footer{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__oldprice{
+            font-size: 14px;
+            font-weight: 300;
+            text-align: left;
+            color: #555;
+            text-decoration: line-through;
+        }
+        &__newprice{
+            margin-top: 9px;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: left;
+            color: #050505;
+        }
+        &__wrapper{
+            display: flex;
+            width: calc(200% + 50px);
+        }
+        &__content{
+            width: 50%;
+            margin-right: 20px;
+            transform: translateX(-110%);
+            transition: 0.5s all;
+            &_active{
+                transform: translateX(0%);
+            }
+        }
+        &__list{
+            padding-right: 10px;
+            width: 50%;
+            margin-left: 0px;
+            transform: translateX(0%);
+            padding-left: 10px;
+            margin-bottom: 0;
+            list-style-type: none;
+            transition: 0,5s all;
+            position: relative;
+            &_active{
+                transform: translateX(-100%);
+                margin-left: 0px;
+            }
+            li{
+                position: relative;
+                font-size: 14px;
+                font-weight: 300;
+                text-align: left;
+                color: #555;
+                margin-bottom: 20px;
+                &:before{
+                    content: '';
+                    position: absolute;
+                    width: 5px;
+                    height: 5px;
+                    background-color: rgb(168, 15, 15);
+                    left: -15px;
+                    top: 5px;
+                }
+            }
+            &__back{
+                text-transform: uppercase;
+                display: block;
+                margin-top: 85px;
+                font-size: 14px;
+                font-weight: 500;
+                text-align: center;
+                color: #c70101;
+                &:hover{
+                    color: #c70101;
+                }
+            }
+        }
+    }
+}

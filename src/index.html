@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="Image/x-icon" href="icons/Calculator.ico" rel="icon">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Calc</title>
+</head>
+<body>
+    <section class="calculator">
+            <input type="text" id="screen" placeholder="0">
+
+            <button class="btn_symbol" onclick="wipe()">AC</button>
+            <button class="btn_symbol" onclick="wipe()">C</button>
+            <button class="btn_symbol" onclick="show('/')">/</button>
+            <button class="btn_symbol" onclick="show('*')">*</button>
+    
+            <button class="btn_number" onclick="show('7')">7</button>
+            <button class="btn_number" onclick="show('8')">8</button>
+            <button class="btn_number" onclick="show('9')">9</button>
+            <button class="btn_symbol" onclick="show('-')">-</button>
+    
+            <button class="btn_number" onclick="show('4')">4</button>
+            <button class="btn_number" onclick="show('5')">5</button>
+            <button class="btn_number" onclick="show('6')">6</button>
+            <button class="btn_symbol" onclick="show('+')">+</button>
+    
+            <button class="btn_number" onclick="show('1')">1</button>
+            <button class="btn_number" onclick="show('2')">2</button>
+            <button class="btn_number" onclick="show('3')">3</button>
+            <button class="btn_symbol" onclick="show('.')">.</button>
+    
+            <button class="btn_number" onclick="show('(')">(</button>
+            <button class="btn_number" onclick="show('0')">0</button>
+            <button class="btn_number" onclick="show(')')">)</button>
+            <button class="btn_symbol" onclick="calc('=')">=</button>
+
+    </section>
+
+
+    <script src="js/math.js"></script>
+</body>
+</html>

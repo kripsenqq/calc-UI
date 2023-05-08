@@ -1,0 +1,47 @@
+hr{
+    max-width: 940px;
+    height: 1px;
+    background-color: #f6f6f6;
+}
+.comments{
+    position: relative;
+    &__title{
+        margin: 0 auto;
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+        color: #0d0d0d;
+    }
+    &__img{
+        position: absolute;
+    }
+    &__content{
+        margin: 70px 0 68px 0;
+    }
+    &__text{
+        margin-left: 230px;
+        &__subtitle{
+            font-size: 18px;
+            font-weight: bold;
+            text-align: left;
+            color: #0d0d0d;
+        }
+        &__marathons{
+            font-size: 14px;
+            font-weight: 300;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: left;
+            color: #646464;
+        }
+        &__description{
+            margin-top: 19px;
+            font-size: 16px;
+            font-weight: 300;
+            text-align: left;
+            color: #0d0d0d;
+        }
+    }
+}
